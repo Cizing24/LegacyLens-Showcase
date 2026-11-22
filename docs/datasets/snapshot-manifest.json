@@ -1,0 +1,67 @@
+{
+  "classification": "Public Dataset Observation",
+  "datasetId": "erm2-nwe9",
+  "source": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+  "retrievedAtUtc": "2026-11-21T19:03:25.443156+00:00",
+  "sourceRowsUpdatedAt": 1795230667,
+  "requestedRows": 100000,
+  "downloadedRows": 100000,
+  "uniqueKeys": 100000,
+  "fields": [
+    "unique_key",
+    "created_date",
+    "complaint_type",
+    "status",
+    "agency"
+  ],
+  "window": "2024-01-01 inclusive through 2024-02-01 exclusive; earliest rows, not a representative random sample",
+  "queries": [
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=0",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=10000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=20000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=30000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=40000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=50000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=60000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=70000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=80000",
+    "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=unique_key%2Ccreated_date%2Ccomplaint_type%2Cstatus%2Cagency&%24where=created_date+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+created_date+%3C+%272024-02-01T00%3A00%3A00%27&%24order=created_date+ASC%2Cunique_key+ASC&%24limit=10000&%24offset=90000"
+  ],
+  "snapshotSha256": "b6b1042b2823a91f153521450d9e619caed2176b337631b5a0824e702b8a481e",
+  "csvSha256": "8ec3863035f261f2450129e43ce4fadd2036d7b6fedebae9a1eb03a4aec1db0e",
+  "sourceLicenseId": null,
+  "terms": "https://www.nyc.gov/home/terms-of-use.page",
+  "columns": [
+    {
+      "fieldName": "unique_key",
+      "name": "Unique Key",
+      "dataTypeName": "text",
+      "description": "Unique identifier of a Service Request (SR) in the open data set\n"
+    },
+    {
+      "fieldName": "created_date",
+      "name": "Created Date",
+      "dataTypeName": "calendar_date",
+      "description": "Date SR  was created\n"
+    },
+    {
+      "fieldName": "agency",
+      "name": "Agency",
+      "dataTypeName": "text",
+      "description": "Acronym of responding City Government Agency\n"
+    },
+    {
+      "fieldName": "complaint_type",
+      "name": "Problem (formerly Complaint Type)",
+      "dataTypeName": "text",
+      "description": "This is the first level of a hierarchy identifying the topic of the incident or condition.  Problem (formerly Complaint Type) broadly describes the topic of the incident or condition and are defined by the responding agencies. New Problems may be added in response to changes in customer demand."
+    },
+    {
+      "fieldName": "status",
+      "name": "Status",
+      "dataTypeName": "text",
+      "description": "Status of SR submitted \n"
+    }
+  ],
+  "privacy": "No address, ZIP, coordinates, free-form resolution text, names or contact fields requested or stored"
+}

@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyLens.Domain", "src\LegacyLens.Domain\LegacyLens.Domain.csproj", "{08B47A4E-760D-59FD-AF93-9F9A2D1CFC3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyLens.Application", "src\LegacyLens.Application\LegacyLens.Application.csproj", "{877E5747-80FF-5E5D-8AD1-88B22798F08C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyLens.Infrastructure", "src\LegacyLens.Infrastructure\LegacyLens.Infrastructure.csproj", "{E4917BC4-5524-524A-B25B-C350DC16FDCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyLens.Web", "src\LegacyLens.Web\LegacyLens.Web.csproj", "{46D83D9A-E1A4-5BA7-8FCE-7D5F2E64C33F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyLens.Tests", "tests\UnitTests\LegacyLens.Tests.csproj", "{101794A8-AEE0-51A1-8881-2DA0233E4A2E}"
+EndProject
+Global
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+EndGlobalSection
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+{08B47A4E-760D-59FD-AF93-9F9A2D1CFC3C}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+{08B47A4E-760D-59FD-AF93-9F9A2D1CFC3C}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+{08B47A4E-760D-59FD-AF93-9F9A2D1CFC3C}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+{08B47A4E-760D-59FD-AF93-9F9A2D1CFC3C}.Release|Any CPU.Build.0 = Release|AnyCPU
+{877E5747-80FF-5E5D-8AD1-88B22798F08C}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+{877E5747-80FF-5E5D-8AD1-88B22798F08C}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+{877E5747-80FF-5E5D-8AD1-88B22798F08C}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+{877E5747-80FF-5E5D-8AD1-88B22798F08C}.Release|Any CPU.Build.0 = Release|AnyCPU
+{E4917BC4-5524-524A-B25B-C350DC16FDCA}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+{E4917BC4-5524-524A-B25B-C350DC16FDCA}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+{E4917BC4-5524-524A-B25B-C350DC16FDCA}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+{E4917BC4-5524-524A-B25B-C350DC16FDCA}.Release|Any CPU.Build.0 = Release|AnyCPU
+{46D83D9A-E1A4-5BA7-8FCE-7D5F2E64C33F}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+{46D83D9A-E1A4-5BA7-8FCE-7D5F2E64C33F}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+{46D83D9A-E1A4-5BA7-8FCE-7D5F2E64C33F}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+{46D83D9A-E1A4-5BA7-8FCE-7D5F2E64C33F}.Release|Any CPU.Build.0 = Release|AnyCPU
+{101794A8-AEE0-51A1-8881-2DA0233E4A2E}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+{101794A8-AEE0-51A1-8881-2DA0233E4A2E}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+{101794A8-AEE0-51A1-8881-2DA0233E4A2E}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+{101794A8-AEE0-51A1-8881-2DA0233E4A2E}.Release|Any CPU.Build.0 = Release|AnyCPU
+EndGlobalSection
+EndGlobal

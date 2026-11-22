@@ -1,0 +1,15 @@
+{
+  "LegacyLens.Application": [
+    "LegacyLens.Domain"
+  ],
+  "LegacyLens.Domain": [],
+  "LegacyLens.Infrastructure": [
+    "LegacyLens.Domain",
+    "LegacyLens.Application"
+  ],
+  "LegacyLens.Web": [
+    "LegacyLens.Domain",
+    "LegacyLens.Application",
+    "LegacyLens.Infrastructure"
+  ]
+}

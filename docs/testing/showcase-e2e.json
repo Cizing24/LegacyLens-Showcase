@@ -1,0 +1,566 @@
+{
+  "config": {
+    "configFile": "<workspace>\\.runtime\\LegacyLens-Showcase\\playwright.config.js",
+    "rootDir": "<workspace>/.runtime/LegacyLens-Showcase/tests/E2E",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "<workspace>/.runtime/LegacyLens-Showcase/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "<workspace>/.runtime/LegacyLens-Showcase/tests/E2E",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/testing/e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "baseline.spec.js",
+      "file": "baseline.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "anonymous redirects to login and wrong credentials stay rejected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3130,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:14.392Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "baebd2168b197d5b0eef-7f7cebc3391429a4af70",
+          "file": "baseline.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "create, postback, edit, history and search use SQL-backed pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2739,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:18.020Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "baebd2168b197d5b0eef-52fbef1c7ffefba30122",
+          "file": "baseline.spec.js",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "pagination returns different records",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1483,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:20.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "baebd2168b197d5b0eef-ffef506022ea07c8c42c",
+          "file": "baseline.spec.js",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "manager can create and edit a customer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1899,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:22.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "baebd2168b197d5b0eef-4d494317b357af66a70e",
+          "file": "baseline.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "viewer write is denied server-side even if button is re-enabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1844,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:24.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "baebd2168b197d5b0eef-4d9d4e19523a575bf084",
+          "file": "baseline.spec.js",
+          "line": 53,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "change001.spec.js",
+      "file": "change001.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CHANGE-001 manager transfers a new case with history and validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2140,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:26.101Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc56ec99c1bf52d61f32-8e0ad9302784dabdbc80",
+          "file": "change001.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "CHANGE-001 agent sees no manager transfer controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1681,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:28.265Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc56ec99c1bf52d61f32-352f5103d8694dbc417d",
+          "file": "change001.spec.js",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "historical-assignee.spec.js",
+      "file": "historical-assignee.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Issue #9: manager transfers a historical assignee after Disable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9295,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"issue\":9,\"mutation\":\"Disable\",\"database\":\"LegacyLensShowcaseE2E\",\"originalHistory\":1,\"transferHistory\":1,\"transferAudit\":1,\"unauthorizedHttpStatus\":403}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:29.983Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7979d4ae04a31121afe6-57201462450bc6facecb",
+          "file": "historical-assignee.spec.js",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Issue #9: manager transfers a historical assignee after Demote",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8109,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"issue\":9,\"mutation\":\"Demote\",\"database\":\"LegacyLensShowcaseE2E\",\"originalHistory\":1,\"transferHistory\":1,\"transferAudit\":1,\"unauthorizedHttpStatus\":403}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:39.306Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7979d4ae04a31121afe6-e6ef940add351dcc6be8",
+          "file": "historical-assignee.spec.js",
+          "line": 14,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "security.spec.js",
+      "file": "security.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "stale browser edit is rejected and the latest title remains",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2327,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:47.447Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3efa7971ab9a8dd627a5-63910324b08fd6e20988",
+          "file": "security.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "tampered ViewState is rejected without leaking diagnostics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1561,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:49.797Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3efa7971ab9a8dd627a5-976c9467625b683a9c6c",
+          "file": "security.spec.js",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "mobile viewport keeps forms and navigation usable without document overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1260,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:51.385Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3efa7971ab9a8dd627a5-ab3a4eff7941e000dcd1",
+          "file": "security.spec.js",
+          "line": 30,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "web001.spec.js",
+      "file": "web001.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WEB-001 unsaved edits survive a real AutoPostBack",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1637,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"classification\":\"Controlled Fault Injection\",\"caseId\":\"WEB-001\",\"original\":\"併發驗證：最新內容 1795341769049\",\"expected\":\"WEB-001 draft 1795341774018\",\"actual\":\"WEB-001 draft 1795341774018\",\"retained\":true}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T10:02:52.678Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "394e72d6c9d92c2b683c-5d6538007b0c7d1a65e9",
+          "file": "web001.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-22T10:02:11.783Z",
+    "duration": 42808.289000000004,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

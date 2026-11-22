@@ -1,0 +1,13 @@
+{
+  "snapshotHashMatches": true,
+  "csvHashMatches": true,
+  "records": 100000,
+  "uniqueKeys": 100000,
+  "onlyFiveAllowlistedFields": true,
+  "csvRecords": 100000,
+  "officialLicenseId": null,
+  "officialRowsUpdatedAt": 1795230667,
+  "snapshotSourceRowsUpdatedAt": 1795230667,
+  "sourceUrl": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+  "rawSnapshotCommitted": false
+}

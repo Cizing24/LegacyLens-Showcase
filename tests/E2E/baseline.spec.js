@@ -1,0 +1,66 @@
+const { test, expect } = require('@playwright/test');
+const { login } = require('./helpers');
+test('anonymous redirects to login and wrong credentials stay rejected', async ({ page }) => {
+  await page.goto('/Cases.aspx');
+  await expect(page).toHaveURL(/Login.aspx/);
+  await page.getByLabel('帳號', { exact: true }).fill('manager');
+  await page.getByLabel('密碼', { exact: true }).fill('wrong-password');
+  await page.getByRole('button', { name: '登入', exact: true }).click();
+  await expect(page.getByRole('alert')).toContainText('帳號或密碼不正確');
+});
+test('create, postback, edit, history and search use SQL-backed pages', async ({ page }) => {
+  await login(page);
+  await page.getByRole('link', { name: '建立案件', exact: true }).first().click();
+  const title = 'Baseline E2E ' + Date.now();
+  await page.getByLabel('案件主旨（必填）', { exact: true }).fill(title);
+  await page.getByLabel('承辦人（必填）', { exact: true }).selectOption({ label: 'agent' });
+  await page.getByLabel('案件說明', { exact: true }).fill('Web Forms 實際建立與儲存。');
+  await page.getByRole('button', { name: '儲存案件', exact: true }).click();
+  await expect(page).toHaveURL(/id=\d+&saved=1/);
+  await expect(page.getByRole('alert')).toContainText('案件已儲存');
+  await page.getByLabel('案件主旨（必填）', { exact: true }).fill(title + ' edited');
+  await page.getByLabel('分類提示（Postback）', { exact: true }).selectOption({ label: '技術維護' });
+  await expect(page.getByText('已切換分類提示；尚未儲存的案件內容仍保留。', { exact: true })).toBeVisible();
+  await expect(page.getByLabel('案件主旨（必填）', { exact: true })).toHaveValue(title + ' edited');
+  await page.getByLabel('處理狀態', { exact: true }).selectOption('InProgress');
+  await page.getByRole('button', { name: '儲存案件', exact: true }).click();
+  await expect(page.getByLabel('案件主旨（必填）', { exact: true })).toHaveValue(title + ' edited');
+  await expect(page.locator('table')).toContainText('Updated');
+  await page.getByRole('link', { name: '返回案件總覽', exact: true }).click();
+  await page.getByLabel('案件主旨', { exact: true }).fill(title);
+  await page.getByRole('button', { name: '查詢案件', exact: true }).click();
+  await expect(page.locator('table')).toContainText(title + ' edited');
+});
+test('pagination returns different records', async ({ page }) => {
+  await login(page);
+  const first = await page.locator('table tr').nth(1).innerText();
+  await page.getByRole('button', { name: '下一頁', exact: true }).click();
+  await expect(page.locator('table tr').nth(1)).not.toHaveText(first);
+  await expect(page.getByText('第 2 頁 · 每頁 20 筆', { exact: true })).toBeVisible();
+});
+test('manager can create and edit a customer', async ({ page }) => {
+  await login(page);
+  await page.getByRole('link', { name: '客戶資料', exact: true }).click();
+  const name = '合成 E2E 客戶 ' + Date.now();
+  await page.getByLabel('客戶名稱（必填）', { exact: true }).fill(name);
+  await page.getByLabel('產業（必填）', { exact: true }).fill('回歸測試');
+  await page.getByRole('button', { name: '儲存客戶', exact: true }).click();
+  await expect(page.getByRole('alert')).toContainText('客戶資料已儲存');
+  await page.getByLabel('產業（必填）', { exact: true }).fill('已更新的合成分類');
+  await page.getByRole('button', { name: '儲存客戶', exact: true }).click();
+  await expect(page.getByLabel('產業（必填）', { exact: true })).toHaveValue('已更新的合成分類');
+});
+test('viewer write is denied server-side even if button is re-enabled', async ({ page }) => {
+  await login(page, 'viewer');
+  await page.locator('table a').first().click();
+  const save = page.getByRole('button', { name: '儲存案件', exact: true });
+  await expect(save).toBeDisabled();
+  await save.evaluate(element => element.disabled = false);
+  const response = page.waitForResponse(r => r.url().includes('CaseEdit.aspx') && r.request().method() === 'POST');
+  await save.click();
+  expect((await response).status()).toBe(403);
+  await page.getByRole('button', { name: '登出', exact: true }).click();
+  await expect(page).toHaveURL(/Login.aspx/);
+  await page.goto('/Cases.aspx');
+  await expect(page).toHaveURL(/Login.aspx/);
+});

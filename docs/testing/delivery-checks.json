@@ -1,0 +1,17 @@
+{
+  "localLinksChecked": 173,
+  "showcaseLocalNunit": 58,
+  "unit": 25,
+  "sqlIntegration": 33,
+  "showcaseLocalE2E": 13,
+  "showcaseCiReportsValidated": false,
+  "sourceHistoricalReportsValidated": true,
+  "benchmarkScales": [
+    10000,
+    50000,
+    100000
+  ],
+  "web001RedGreen": true,
+  "mediaValidated": true,
+  "credentialPatternScan": "no matches"
+}

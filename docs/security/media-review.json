@@ -1,0 +1,62 @@
+{
+  "binaryMedia": [
+    {
+      "path": "docs/media/audit-report.png",
+      "sha256": "c2f8ac88fa278a11a27184d24159857d7bed84e6275a76b64bfe6090a8f2a7ac",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/case-detail.png",
+      "sha256": "3e968769c70b88b86af468831a7d306ace488eb5b9360b25958688477a65fcd3",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/case-search.png",
+      "sha256": "c9b3c32e12b58b8930305b677286ec8cf0c3aa850ec6448a086ed123fe213c14",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/cover.png",
+      "sha256": "dba7e141b539c4b6556da47e79a2ae7a422dd3e2148286ecf87d85c8da1a0e7b",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/customers.png",
+      "sha256": "deb43947cbf5a9f3ce83ef637d18727785685199f6b1b8eb6256cc525dd7c7ab",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/demo.mp4",
+      "sha256": "e0a8eb292b7543d7dd3b8a06f8f0e5341415005be6462f140653c6a691622061",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/mobile-form.png",
+      "sha256": "79333f0e71fe61b2e70b81c00305a595289714f1027901d1c357a0fed416e8d2",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/reassignment-history.png",
+      "sha256": "9642c1bc2b10ce9bb38342e1b8db1f128b230e92a3ef55c9239f4101797efbf4",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/sql-benchmark.png",
+      "sha256": "025a24c60b5f5cda08e9262c0f8bacf0c54e465ab7c6d6b21c7d2e5304bf06a3",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/web001-before.png",
+      "sha256": "4126f8c82c925f2ee304e304bfcaf305f348ace358963b7b90270e6d44c3ed21",
+      "unchangedFromMergedMain": true
+    },
+    {
+      "path": "docs/media/workflow.gif",
+      "sha256": "ed99f56d3e88994c582c481ee57ab3b7e99fe2b06c994ed5a97d46ceeda1850f",
+      "unchangedFromMergedMain": true
+    }
+  ],
+  "mp4DurationSeconds": 118,
+  "visualReview": "existing screenshots and 24 video samples at five-second intervals; no personal fields, password text or browser chrome seen",
+  "limitations": "Sampling does not prove every video frame; full decode and capture-source review complement visual sampling."
+}

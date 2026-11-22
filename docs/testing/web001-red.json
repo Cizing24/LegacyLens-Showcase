@@ -1,0 +1,158 @@
+{
+  "config": {
+    "configFile": "<workspace>\\playwright.config.js",
+    "rootDir": "<workspace>/tests/E2E",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "<workspace>/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "<workspace>/tests/E2E",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/testing/e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "web001.spec.js",
+      "file": "web001.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WEB-001 unsaved edits survive a real AutoPostBack",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13445,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('案件主旨（必填）', { exact: true })\nExpected: \u001b[32m\"WEB-001 draft 1795288401528\"\u001b[39m\nReceived: \u001b[31m\"Baseline E2E 1795288118668 edited\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('案件主旨（必填）', { exact: true })\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" maxlength=\"160\" id=\"Main_CaseTitle\" name=\"ctl00$Main$CaseTitle\" value=\"Baseline E2E 1795288118668 edited\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Baseline E2E 1795288118668 edited\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('案件主旨（必填）', { exact: true })\nExpected: \u001b[32m\"WEB-001 draft 1795288401528\"\u001b[39m\nReceived: \u001b[31m\"Baseline E2E 1795288118668 edited\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('案件主旨（必填）', { exact: true })\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" maxlength=\"160\" id=\"Main_CaseTitle\" name=\"ctl00$Main$CaseTitle\" value=\"Baseline E2E 1795288118668 edited\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Baseline E2E 1795288118668 edited\"\u001b[22m\n\n    at <workspace>\\tests\\E2E\\web001.spec.js:17:23",
+                    "location": {
+                      "file": "<workspace>\\tests\\E2E\\web001.spec.js",
+                      "column": 23,
+                      "line": 17
+                    },
+                    "snippet": "  15 |   const actual = await title.inputValue();\n  16 |   console.log(JSON.stringify({ classification: 'Controlled Fault Injection', caseId: 'WEB-001', original, expected: draft, actual, retained: actual === draft }));\n> 17 |   await expect(title).toHaveValue(draft);\n     |                       ^\n  18 |   await expect(page.getByLabel('案件說明', { exact: true })).toHaveValue('Unsaved description must also survive.');\n  19 | });\n  20 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<workspace>\\tests\\E2E\\web001.spec.js",
+                        "column": 23,
+                        "line": 17
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('案件主旨（必填）', { exact: true })\nExpected: \u001b[32m\"WEB-001 draft 1795288401528\"\u001b[39m\nReceived: \u001b[31m\"Baseline E2E 1795288118668 edited\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('案件主旨（必填）', { exact: true })\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" maxlength=\"160\" id=\"Main_CaseTitle\" name=\"ctl00$Main$CaseTitle\" value=\"Baseline E2E 1795288118668 edited\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Baseline E2E 1795288118668 edited\"\u001b[22m\n\n\n  15 |   const actual = await title.inputValue();\n  16 |   console.log(JSON.stringify({ classification: 'Controlled Fault Injection', caseId: 'WEB-001', original, expected: draft, actual, retained: actual === draft }));\n> 17 |   await expect(title).toHaveValue(draft);\n     |                       ^\n  18 |   await expect(page.getByLabel('案件說明', { exact: true })).toHaveValue('Unsaved description must also survive.');\n  19 | });\n  20 |\n    at <workspace>\\tests\\E2E\\web001.spec.js:17:23"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"classification\":\"Controlled Fault Injection\",\"caseId\":\"WEB-001\",\"original\":\"Baseline E2E 1795288118668 edited\",\"expected\":\"WEB-001 draft 1795288401528\",\"actual\":\"Baseline E2E 1795288118668 edited\",\"retained\":false}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-21T19:13:13.464Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "<workspace>\\test-results\\web001-WEB-001-unsaved-edits-survive-a-real-AutoPostBack\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<workspace>\\test-results\\web001-WEB-001-unsaved-edits-survive-a-real-AutoPostBack\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "<workspace>\\test-results\\web001-WEB-001-unsaved-edits-survive-a-real-AutoPostBack\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<workspace>\\tests\\E2E\\web001.spec.js",
+                    "column": 23,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "394e72d6c9d92c2b683c-5d6538007b0c7d1a65e9",
+          "file": "web001.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-21T19:13:11.104Z",
+    "duration": 16326.098000000002,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

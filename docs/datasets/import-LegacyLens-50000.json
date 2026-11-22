@@ -1,0 +1,9 @@
+﻿{
+    "requested":  50000,
+    "elapsedMs":  1487.7183,
+    "utc":  "2026-11-21T19:12:03.5707622Z",
+    "csvSha256":  "8ec3863035f261f2450129e43ce4fadd2036d7b6fedebae9a1eb03a4aec1db0e",
+    "inserted":  40000,
+    "sourceRows":  50000,
+    "database":  "LegacyLens"
+}

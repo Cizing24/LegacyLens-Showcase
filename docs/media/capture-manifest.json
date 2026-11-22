@@ -1,0 +1,13 @@
+{
+  "recordedAtUtc": "2026-11-21T19:36:38.632Z",
+  "durationTargetSeconds": 118,
+  "videoSource": ".runtime/media/d173be63d2f5316509010ab6a2fc22c9.webm",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "screenshots": "1600x900 desktop; 390x844 mobile",
+  "caseUrl": "http://localhost:5188/CaseEdit.aspx?id=100099&saved=1",
+  "classification": "Actual IIS Express application; public categories and synthetic customer/case fields; controlled failure only on isolated port 5191",
+  "pageErrors": []
+}

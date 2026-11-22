@@ -1,0 +1,12 @@
+{
+  "name": "legacylens-browser-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Real IIS Express Web Forms E2E and media capture",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:baseline": "playwright test tests/E2E/baseline.spec.js",
+    "capture": "node tools/media-capture/capture.js"
+  },
+  "devDependencies": { "@playwright/test": "1.58.2" }
+}

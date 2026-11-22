@@ -1,0 +1,9 @@
+<%@ Master Language="C#" CodeBehind="Site.master.cs" Inherits="LegacyLens.Web.SiteMaster" %>
+<!doctype html>
+<html lang="zh-Hant"><head runat="server"><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>LegacyLens · 客戶服務案件</title><link href="Content/site.css" rel="stylesheet" /></head>
+<body><a class="skip" href="#main">跳至主要內容</a><form id="MainForm" runat="server">
+<header class="topbar"><a class="brand" href="Cases.aspx"><span class="brand-mark" aria-hidden="true">L</span>LegacyLens</a><span class="workspace">客戶服務工作台</span><div class="account"><span><%: Current.Actor.Name %> / <%: Current.Actor.Role %></span><asp:Button ID="Logout" runat="server" Text="登出" CssClass="text-button" OnClick="Logout_Click" CausesValidation="false" /></div></header>
+<div class="shell"><nav class="sidebar" aria-label="主要導覽"><p class="nav-heading">工作空間</p><a href="Cases.aspx">案件總覽</a><a href="CaseEdit.aspx">建立案件</a><a href="Customers.aspx">客戶資料</a><a href="Reports.aspx">統計與稽核</a><div class="sidebar-note"><strong>本機工程展示</strong><p>公開 311 紀錄與合成客戶欄位。所有操作留有處理歷程。</p></div></nav>
+<main id="main"><asp:ContentPlaceHolder ID="Main" runat="server" /></main></div>
+<footer>LegacyLens · ASP.NET Web Forms / .NET Framework 4.8 <span>追蹤編號：<%: Current.CorrelationId %></span></footer>
+</form><script src="Content/site.js"></script></body></html>

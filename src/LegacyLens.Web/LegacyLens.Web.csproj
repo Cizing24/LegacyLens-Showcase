@@ -1,0 +1,15 @@
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<PropertyGroup><Configuration Condition="'$(Configuration)' == ''">Debug</Configuration><Platform Condition="'$(Platform)' == ''">AnyCPU</Platform><ProjectGuid>{46D83D9A-E1A4-5BA7-8FCE-7D5F2E64C33F}</ProjectGuid><OutputType>Library</OutputType><RootNamespace>LegacyLens.Web</RootNamespace><AssemblyName>LegacyLens.Web</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><LangVersion>7.3</LangVersion><OutputPath>bin\</OutputPath><DebugType>pdbonly</DebugType><WarningLevel>4</WarningLevel><TreatWarningsAsErrors>true</TreatWarningsAsErrors><Deterministic>true</Deterministic><ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v17.0</VSToolsPath></PropertyGroup>
+<ItemGroup><Reference Include="System" />
+<Reference Include="System.Core" />
+<Reference Include="System.Data" />
+<Reference Include="System.Configuration" />
+<Reference Include="System.Xml" />
+<Reference Include="System.Web" />
+<Reference Include="System.Web.Extensions" /></ItemGroup><ItemGroup><ProjectReference Include="..\LegacyLens.Domain\LegacyLens.Domain.csproj"><Project>{08B47A4E-760D-59FD-AF93-9F9A2D1CFC3C}</Project><Name>LegacyLens.Domain</Name></ProjectReference>
+<ProjectReference Include="..\LegacyLens.Application\LegacyLens.Application.csproj"><Project>{877E5747-80FF-5E5D-8AD1-88B22798F08C}</Project><Name>LegacyLens.Application</Name></ProjectReference>
+<ProjectReference Include="..\LegacyLens.Infrastructure\LegacyLens.Infrastructure.csproj"><Project>{E4917BC4-5524-524A-B25B-C350DC16FDCA}</Project><Name>LegacyLens.Infrastructure</Name></ProjectReference></ItemGroup>
+<ItemGroup><Compile Include="**\*.cs" Exclude="bin\**;obj\**" /><Content Include="**\*.aspx;**\*.master;**\*.css;**\*.js;Web.config;Global.asax" Exclude="bin\**;obj\**" /></ItemGroup>
+<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /><Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+</Project>
