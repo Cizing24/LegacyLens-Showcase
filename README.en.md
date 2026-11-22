@@ -58,6 +58,7 @@ Typed SQL parameters, fixed predicate fragments, server authorization, transacti
 | MSBuild Release | Passed locally and on Windows Runner; WarningLevel 4/TreatWarningsAsErrors |
 | NUnit | **58/58 passed**: 25 unit and 33 real SQL integration/regression; 0 skipped; [current local report](docs/testing/showcase-nunit.xml) |
 | Playwright | **13/13 Chromium E2E passed**: the original 11 plus dedicated disabled/demoted historical-assignee regressions; [current report](docs/testing/showcase-e2e.json) |
+| Tool tests | **6/6 passed**: 3 report-redaction and 3 public-privacy checks |
 | Dependency audit | `npm audit --audit-level=high`:0 reported vulnerabilities at execution |
 | Windows CI | [Current main/PR checks](https://github.com/Cizing24/LegacyLens-Showcase/actions/workflows/windows.yml), including actual LocalDB and IIS Express E2E; [executed CI record](docs/testing/CI.md) |
 

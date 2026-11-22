@@ -66,6 +66,7 @@ LegacyLens 以三個具體案例處理這些問題。受控缺陷只存在於獨
 | MSBuild Release | 本機與 GitHub Windows Runner 成功；WarningLevel 4、TreatWarningsAsErrors |
 | NUnit | **58／58 通過**：25 Unit＋33 真正 SQL integration／regression，0 skipped；[目前本機原始結果](docs/testing/showcase-nunit.xml) |
 | Playwright | **13／13 Chromium E2E 通過**：既有11項加上承辦人停用／降為 Viewer 的兩項專屬回歸；[目前原始結果](docs/testing/showcase-e2e.json) |
+| 工具測試 | **6／6 通過**：3 項報告清理＋3 項公開掃描測試 |
 | 依賴檢查 | `npm audit --audit-level=high` 當次回報0 vulnerabilities |
 | Windows CI | [最新 main／PR Checks](https://github.com/Cizing24/LegacyLens-Showcase/actions/workflows/windows.yml)，包含真實 DB 與 IIS Express E2E；[實際執行紀錄](docs/testing/CI.md) |
 

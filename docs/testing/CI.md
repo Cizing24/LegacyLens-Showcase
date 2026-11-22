@@ -6,7 +6,7 @@
 
 本機已在獨立 Showcase 目錄執行 Release、58/58 NUnit（25 Unit、33 SQL integration/regression）、13/13 Chromium E2E，以及6/6工具測試（原有3項報告測試＋3項公開掃描測試），無 skipped。原始公開副本：[NUnit](showcase-nunit.xml)、[E2E](showcase-e2e.json)。
 
-遠端 CI 尚待本版 Initial Commit 推送後執行，未以來源結果冒充。完成後由本頁記錄本版 Run 與去識別化報告。
+本版 Initial Commit `cbb970a57cd503a0c3e0cc9df125b17dd950ea7d` 的 [Run45010995328](https://github.com/Cizing24/LegacyLens-Showcase/actions/runs/45010995328) 已成功。下載 artifacts 核對 **58/58 NUnit、13/13 Chromium E2E、0 skipped**；logs亦確認6項工具測試與npm audit通過。公開副本：[showcase-ci-nunit.xml](showcase-ci-nunit.xml)、[showcase-ci-e2e.json](showcase-ci-e2e.json)。後續文件提交也由本版workflow重新驗證，最新head狀態以頁首Actions為準。
 
 ## Workflow
 

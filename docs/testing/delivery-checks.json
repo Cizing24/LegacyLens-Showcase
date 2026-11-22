@@ -1,10 +1,10 @@
 {
-  "localLinksChecked": 173,
+  "localLinksChecked": 176,
   "showcaseLocalNunit": 58,
   "unit": 25,
   "sqlIntegration": 33,
   "showcaseLocalE2E": 13,
-  "showcaseCiReportsValidated": false,
+  "showcaseCiReportsValidated": true,
   "sourceHistoricalReportsValidated": true,
   "benchmarkScales": [
     10000,

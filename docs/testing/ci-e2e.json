@@ -12,9 +12,9 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Cizing24/LegacyLens/commit/68cc7c11475913121266c01221dcb09ff1604dd4",
+        "commitHref": "[private-source-reference; see CI.md]",
         "commitHash": "68cc7c11475913121266c01221dcb09ff1604dd4",
-        "buildHref": "https://github.com/Cizing24/LegacyLens/actions/runs/44941755579"
+        "buildHref": "[private-source-reference; see CI.md]"
       },
       "gitCommit": {
         "shortHash": "68cc7c1",
@@ -43,9 +43,9 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Cizing24/LegacyLens/commit/68cc7c11475913121266c01221dcb09ff1604dd4",
+            "commitHref": "[private-source-reference; see CI.md]",
             "commitHash": "68cc7c11475913121266c01221dcb09ff1604dd4",
-            "buildHref": "https://github.com/Cizing24/LegacyLens/actions/runs/44941755579"
+            "buildHref": "[private-source-reference; see CI.md]"
           },
           "gitCommit": {
             "shortHash": "68cc7c1",

@@ -12,12 +12,12 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Cizing24/LegacyLens/commit/893bebe6a64e031006456b6ad166911479df8e62",
+        "commitHref": "[private-source-reference; see CI.md]",
         "commitHash": "893bebe6a64e031006456b6ad166911479df8e62",
-        "prHref": "https://github.com/Cizing24/LegacyLens/pull/10",
+        "prHref": "[private-source-reference; see CI.md]",
         "prTitle": "Finalize main documentation, private readiness review and Issue #9 E2E",
         "prBaseHash": "eba6eecf013ce597e38f0e912c67980093c99418",
-        "buildHref": "https://github.com/Cizing24/LegacyLens/actions/runs/44946791199"
+        "buildHref": "[private-source-reference; see CI.md]"
       },
       "actualWorkers": 1
     },
@@ -29,12 +29,12 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Cizing24/LegacyLens/commit/893bebe6a64e031006456b6ad166911479df8e62",
+            "commitHref": "[private-source-reference; see CI.md]",
             "commitHash": "893bebe6a64e031006456b6ad166911479df8e62",
-            "prHref": "https://github.com/Cizing24/LegacyLens/pull/10",
+            "prHref": "[private-source-reference; see CI.md]",
             "prTitle": "Finalize main documentation, private readiness review and Issue #9 E2E",
             "prBaseHash": "eba6eecf013ce597e38f0e912c67980093c99418",
-            "buildHref": "https://github.com/Cizing24/LegacyLens/actions/runs/44946791199"
+            "buildHref": "[private-source-reference; see CI.md]"
           },
           "actualWorkers": 1
         },
